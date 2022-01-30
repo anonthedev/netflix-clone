@@ -1,0 +1,59 @@
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 65vh;
+  }
+
+.download-img img {
+  width: 530px;
+}
+
+.download-info{
+    position: absolute;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: -130px;
+}
+
+.download-info img{
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 51px;
+}
+
+.download-info p{
+    font-size: 0.8rem;
+}
+
+.download-text {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download-head h2 {
+  max-width: 18ch;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.download-sub h3 {
+  margin-top: 10px;
+  max-width: 35ch;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

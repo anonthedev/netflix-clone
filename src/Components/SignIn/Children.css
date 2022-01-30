@@ -1,0 +1,36 @@
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+.children {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 65vh;
+}
+
+.children-img img {
+  margin-top: 50px;
+  width: 530px;
+}
+
+.children-text {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.children-head h2 {
+  max-width: 20ch;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.children-sub h3 {
+  margin-top: 10px;
+  max-width: 35ch;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
