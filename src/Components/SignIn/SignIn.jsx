@@ -1,4 +1,5 @@
 import "./SignIn.css";
+import Header from "../Header";
 import Enjoy from "./Enjoy";
 import Download from "./Download";
 import Everywhere from "./Everywhere";
@@ -9,26 +10,7 @@ import Summary from "./Summary";
 function SignIn() {
   return (
     <main className="sign-in">
-      <section className="sign-in-nav">
-        <div className="logo-div">
-          <picture className="logo">
-            <img src="../images/logo.png" alt="" />
-          </picture>
-        </div>
-
-        <div className="right-nav">
-          <div className="lang">
-            <select name="" id="">
-              <option value="">English</option>
-            </select>
-          </div>
-
-          <div className="signin-btn">
-            <button>Sign In</button>
-          </div>
-        </div>
-      </section>
-
+      <Header />
       <section className="hero">
         <div className="hero-head">
           <h1>Unlimited movies, TV shows and more.</h1>
@@ -45,7 +27,7 @@ function SignIn() {
         <div className="hero-sign">
           <input type="text" placeholder="Email address" />
           <button>
-            Get Started <i class="ri-arrow-right-s-line"></i>
+            Get Started <i className="ri-arrow-right-s-line"></i>
           </button>
         </div>
       </section>
@@ -57,11 +39,11 @@ function SignIn() {
       <div className="divider"></div>
       <Everywhere />
       <div className="divider"></div>
-      <Children/>
+      <Children />
       <div className="divider"></div>
-      <Faq/>
+      <Faq />
       <div className="divider"></div>
-      <Summary/>
+      <Summary />
     </main>
   );
 }
