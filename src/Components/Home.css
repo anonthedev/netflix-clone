@@ -1,4 +1,13 @@
-img{
-    width: 100px;
-    height: 100px;
+.home{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+section{
+    width: 100vw;
+}
+
+.banner img{
+    width: 100vw;
+    height: 50vh;
 }

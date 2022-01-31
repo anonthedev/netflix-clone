@@ -1,5 +1,6 @@
 import axios from "./axios";
 import { useEffect, useState } from "react";
+import "./Row.css"
 
 const baseImgUrl = "https://image.tmdb.org/t/p/original/";
 
@@ -16,12 +17,12 @@ function Row({ title, fetchImg }) {
   }, []);
 
   return (
-    <div>
+    <div className="row">
       <h2>{title}</h2>
-      <div>
-        {movies.map((movie) => {
-          <img src={`${baseImgUrl}${movie.poster_path}`} alt="" />;
-        })}
+      <div className="row-img">
+        {movies.map((movie) => (
+          <img key={movie.id} src={`${baseImgUrl}${movie.poster_path}`} alt="" />
+        ))}
       </div>
     </div>
   );

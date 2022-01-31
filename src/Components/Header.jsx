@@ -24,13 +24,14 @@ function Header() {
   const username = useSelector(selectUserName);
   const userPhoto = useSelector(selectUserPhoto);
 
-  // useEffect(() => {
-  //   auth.onAuthStateChanged(async (user) => {
-  //     if (user) {
-  //       setUser(user);
-  //     }
-  //   });
-  // }, [username]);
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        setUser(user);
+        navigate("/home", { replace: true });
+      }
+    });
+  }, [username]);
 
   const handleAuth = () => {
     if (!username) {
