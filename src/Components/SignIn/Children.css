@@ -1,18 +1,10 @@
-body {
+.children {
   background-color: #000000;
   color: #fff;
-}
-
-.children {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 65vh;
-}
-
-.children-img img {
-  margin-top: 50px;
-  width: 530px;
+  /* height: 65vh; */
 }
 
 .children-text {
@@ -23,7 +15,6 @@ body {
 }
 
 .children-head h2 {
-  max-width: 20ch;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -33,4 +24,74 @@ body {
   max-width: 35ch;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.children-img img{
+  width: 530px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 1280px){
+  .children{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .children-text{
+    padding-top: 50px;
+    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .children-head h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .children-sub h3 {
+    margin-top: 10px;
+    max-width: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .children-img img{
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .children{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .children-text{
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .children-head h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .children-sub h3 {
+    margin-top: 10px;
+    max-width: none;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .children-img img{
+    width: 330px;
+    padding-bottom: 40px;
+  }
 }

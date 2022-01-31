@@ -3,6 +3,8 @@ import Enjoy from "./Enjoy";
 import Download from "./Download";
 import Everywhere from "./Everywhere";
 import Children from "./Children";
+import Faq from "./Faq";
+import Summary from "./Summary";
 
 function SignIn() {
   return (
@@ -56,6 +58,10 @@ function SignIn() {
       <Everywhere />
       <div className="divider"></div>
       <Children/>
+      <div className="divider"></div>
+      <Faq/>
+      <div className="divider"></div>
+      <Summary/>
     </main>
   );
 }

@@ -1,13 +1,10 @@
-body {
+.enjoy {
   background-color: #000000;
   color: #fff;
-}
-
-.enjoy {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 65vh;
+  /* height: 65vh; */
 }
 
 .enjoy-text {
@@ -31,4 +28,69 @@ body {
 
 .enjoy-img img{
   width: 530px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 1280px){
+  .enjoy{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enjoy-text{
+    padding-top: 50px;
+    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enjoy-head h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .enjoy-sub h3 {
+    margin-top: 10px;
+    max-width: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .enjoy-img img{
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .enjoy{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enjoy-text{
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enjoy-head h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .enjoy-sub h3 {
+    margin-top: 10px;
+    max-width: none;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .enjoy-img img{
+    width: 330px;
+    padding-bottom: 40px;
+  }
 }
