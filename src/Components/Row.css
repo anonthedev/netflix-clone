@@ -1,0 +1,37 @@
+body{
+    background-color: #000000;
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.row h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.row-img{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.row-img::-webkit-scrollbar{
+    display: none;
+}
+
+.row-img img{
+    flex-wrap: nowrap;
+    width: 100%;
+    max-height: 200px;
+    transition: transform 0.2s;
+    margin-right: 10px;
+}
+
+.row-img img:hover{
+    transform: scale(1.06);
+}
