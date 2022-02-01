@@ -1,13 +1,4 @@
 .home{
-    background-color: #000000;
+    background-color: rgb(17, 17, 17);
     color: #ffffff;
-}
-
-section{
-    width: 100vw;
-}
-
-.banner img{
-    width: 100vw;
-    height: 50vh;
 }

@@ -1,5 +1,5 @@
 import "./Header.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   auth,
   provider,
@@ -9,7 +9,7 @@ import {
 
 import { useDispatch, useSelector } from "react-redux";
 
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   selectUserName,
@@ -23,6 +23,8 @@ function Header() {
   const navigate = useNavigate();
   const username = useSelector(selectUserName);
   const userPhoto = useSelector(selectUserPhoto);
+
+const [ShowSignOut, setShowSignOut] = useState(false);
 
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
@@ -60,6 +62,10 @@ function Header() {
     );
   }
 
+function changeShowSignOut(){
+  setShowSignOut(!ShowSignOut)
+}
+  
   return (
     <section className="sign-in-nav">
       <div className="logo-div">
@@ -79,9 +85,12 @@ function Header() {
           {!username ? (
             <button onClick={handleAuth}>Sign In</button>
           ) : (
-            <>
-              <img src={userPhoto} alt="" />
-            </>
+            <div className="user">
+              <img src={userPhoto} alt="" onClick={changeShowSignOut}/>
+              <span className={!ShowSignOut ? "sign-out-hide" : "sign-out"} onClick={handleAuth}>
+                Sign Out
+              </span>
+            </div>
           )}
         </div>
       </div>
